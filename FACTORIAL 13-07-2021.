@@ -1,0 +1,25 @@
+import java.util.*;
+class Factorial
+{
+       int fact(int n)
+      {
+          if(n==0)
+               return 1;
+          else
+              return(n*fact(n-1));
+      }
+public static void main(String[] args)
+     {
+         Factorial f=new Factorial();
+         Scanner sc=new Scanner(System.in);
+         System.out.print("ENTER A NUMBER");
+         int n=sc.nextInt();
+         System.out.print("Factorial:" +f.fact(n));
+     }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+C:\Users\hp>javac Factorial.java
+C:\Users\hp>java Factorial
+ENTER A NUMBER 5
+Factorial:120
